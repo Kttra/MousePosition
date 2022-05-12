@@ -34,14 +34,14 @@ namespace MouseSetPos
         private void mEventsMouseMove(object sender, MouseEventArgs e)
         {
             //labelPos.Text = e.Location.ToString();
-            labelPos.Text = String.Format("x={0:0000}; y={0:0000}", e.X, e.Y);
+            labelPos.Text = String.Format("x={0:0000}; y={1:0000}", e.X, e.Y);
 
         }
         //Set the cursor to the specificed position
         private void BtnChange_Click(object sender, EventArgs e)
         {
             SetCursorPos(0, 0);
-            labelPos.Text = String.Format("x={0:0000}; y={0:0000}", MousePosition.X, MousePosition.Y);
+            labelPos.Text = String.Format("x={0:0000}; y={1:0000}", MousePosition.X, MousePosition.Y);
         }
         //Start up the program
         private void Form_MouseSetPos_Load(object sender, EventArgs e)
